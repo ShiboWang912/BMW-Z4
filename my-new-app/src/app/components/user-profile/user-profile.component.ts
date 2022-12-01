@@ -13,7 +13,7 @@ export class UserProfileComponent implements OnInit {
 
   constructor(
     public authService: AuthService,
-    private actRoute: ActivatedRoute
+    private actRoute: ActivatedRoute,
   ) {
     // let id = this.actRoute.snapshot.paramMap.get('id');
     // this.authService.getUserProfile(id).subscribe((res) => {

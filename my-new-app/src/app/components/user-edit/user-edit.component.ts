@@ -24,14 +24,14 @@ export class UserEditComponent implements OnInit {
       this.updateForm.setValue({
         name: res['name'],
         email: res['email'],
-       
+        userType: res['userType'],
       });
     });
 
     this.updateForm = this.formBuilder.group({
       name: [''],
       email: [''],
-      
+      userType:[''],
         
     });}
 

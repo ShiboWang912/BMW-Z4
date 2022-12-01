@@ -32,7 +32,9 @@ export class CrudService {
   GetIncidents() {
     return this.httpClient.get(`${this.REST_API}`);
   }
-
+  GetUsers() {
+    return this.httpClient.get(`${this.REST_API}`);
+  }
   // Get single object
   GetIncident(id: any): Observable<any> {
     let API_URL = `${this.REST_API}/read-incident/${id}`;
