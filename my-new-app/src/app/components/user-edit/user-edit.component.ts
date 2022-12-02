@@ -20,13 +20,11 @@ export class UserEditComponent implements OnInit {
     private activatedRoute: ActivatedRoute,
     private crudService: CrudService) { this.getId = this.activatedRoute.snapshot.paramMap.get('id');
 
-    this.crudService.GetUser(this.getId).subscribe((res) => {
-      this.updateForm.setValue({
-        name: res['name'],
-        email: res['email'],
-        userType: res['userType'],
-      });
-    });
+    // this.crudService.GetUser(this.getId).subscribe((res) => {
+    //   this.updateForm.setValue({name: [''],
+    //   email: [''],
+    //   userType:[''],});
+    // });
 
     this.updateForm = this.formBuilder.group({
       name: [''],
